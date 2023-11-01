@@ -7,9 +7,9 @@ license = "GNU GPL v3.0"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-typer-shell = {extras = ["all"], version = "^0.1.6"}
-httpx-gssapi = "^0.2.1"
+python = ">=3.10,<3.12"
+typer = {extras = ["all"], version = "^0.9.0"}
+httpx = "^0.25.0"
 
 [tool.poetry.group.dev.dependencies]
 httpie = "^3.2.2"
