@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gabie-fm"
+version = "0.1.0"
+description = "Automating weekly last.fm tasks"
+authors = ["gabriela <sg.villegasq@gmail.com>"]
+license = "GNU GPL v3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer-shell = {extras = ["all"], version = "^0.1.6"}
+httpx-gssapi = "^0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+httpie = "^3.2.2"
+black = "^23.10.1"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
